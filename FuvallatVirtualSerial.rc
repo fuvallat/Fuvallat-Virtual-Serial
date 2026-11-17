@@ -1,0 +1,145 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+/////////////////////////////////////////////////////////////////////////////
+// Hungarian (Hungary) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_HUN)
+LANGUAGE LANG_HUNGARIAN, SUBLANG_DEFAULT
+#pragma code_page(1250)
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 10,0,10011,16384
+ PRODUCTVERSION 10,0,10011,16384
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x9L
+#else
+ FILEFLAGS 0x8L
+#endif
+ FILEOS 0x40004L
+ FILETYPE 0x2L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "040904b0"
+        BEGIN
+            VALUE "CompanyName", "Fuvalat.hu"
+            VALUE "FileDescription", "WDF:UMDF VirtualSerial User-Mode v2 Driver Sample"
+            VALUE "FileVersion", "10.0.10011.16384"
+            VALUE "InternalName", "FuvallatVirtualSerial"
+            VALUE "LegalCopyright", "�Fuvallat.hu"
+            VALUE "OriginalFilename", "FuvallatVirtualSerial.dll"
+            VALUE "ProductName", "Libra"
+            VALUE "ProductVersion", "10.0.10011.16384"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x409, 1200
+    END
+END
+
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_FUVALLAT_DIALOG DIALOGEX 0, 0, 225, 150
+STYLE DS_SETFONT | DS_SHELLFONT | WS_CHILD | WS_VISIBLE
+EXSTYLE WS_EX_CONTROLPARENT
+FONT 9, "MS Shell Dlg 2", 0, 0, 0x0
+BEGIN
+    GROUPBOX        "Properties",IDC_GROUP_PROPERTIES,7,7,210,65
+    LTEXT           "Mode",IDC_MODE_LABEL,10,22,60,8
+    COMBOBOX        IDC_MODE,70,20,85,100,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "Operation mode", IDC_OPERATION_LABEL, 10, 37, 60, 8, NOT WS_VISIBLE
+    COMBOBOX        IDC_OPERATION, 70, 35, 70, 100, CBS_DROPDOWNLIST | NOT WS_VISIBLE | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "Device", IDC_DEVICE_LABEL, 10, 53, 60, 8, NOT WS_VISIBLE
+    COMBOBOX        IDC_DEVICE, 70, 50, 140, 100, CBS_DROPDOWNLIST | NOT WS_VISIBLE | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "Forward to",IDC_FORWARD_TARGET_LABEL,10,37,60,8,NOT WS_VISIBLE
+    COMBOBOX        IDC_FORWARD_TARGET,70,35,70,100,CBS_DROPDOWNLIST | NOT WS_VISIBLE | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "Connect to",IDC_TARGET_LABEL,10,53,60,8,NOT WS_VISIBLE
+    COMBOBOX        IDC_TARGET_PORT,70,50,50,100,CBS_DROPDOWNLIST | CBS_SORT | NOT WS_VISIBLE | WS_VSCROLL | WS_TABSTOP
+    EDITTEXT        IDC_TARGET_ADDRESS,70,50,140,14,ES_AUTOHSCROLL | NOT WS_VISIBLE
+    EDITTEXT        IDC_TARGET_FILE,70,50,140,14,ES_AUTOHSCROLL | NOT WS_VISIBLE
+    DEFPUSHBUTTON   "Save",IDOK,160,20,50,14,BS_PUSHBUTTON | WS_TABSTOP
+    CONTROL         "Enable", IDC_ENABLE_CHECK, "Button", BS_AUTOCHECKBOX | WS_TABSTOP, 160, 37, 60, 10
+    LISTBOX         IDC_SETTINGS_LIST, 7, 75, 210, 70, WS_BORDER | WS_VSCROLL | LBS_NOINTEGRALHEIGHT | WS_TABSTOP
+
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO
+BEGIN
+    IDD_FUVALLAT_DIALOG, DIALOG
+    BEGIN
+        BOTTOMMARGIN, 123
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// AFX_DIALOG_LAYOUT
+//
+
+IDD_FUVALLAT_DIALOG AFX_DIALOG_LAYOUT
+BEGIN
+    0
+END
+
+#endif    // Hungarian (Hungary) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

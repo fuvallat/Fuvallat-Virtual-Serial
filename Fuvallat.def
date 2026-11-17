@@ -1,0 +1,4 @@
+LIBRARY FuvallatVirtualSerial
+EXPORTS
+    DriverEntry
+    FuvallatPropPageProvider
